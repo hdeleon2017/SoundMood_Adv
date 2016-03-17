@@ -1,51 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon.ico">
 
-    <title>Soundmood</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/favicon.ico">
 
-    <!-- CSS -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-    <!-- Bootstrap Jumbotron -->
-    <link rel="stylesheet" href="css/jumbotron-narrow.css">
+  <title>Soundmood</title>
 
-    <!-- JS -->
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <!-- Bootstrap -->
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <!-- Soundcloud API -->
-    <script src="//connect.soundcloud.com/sdk.js"></script>
-    <!-- Our JS -->
-    <script src="js/script.js"></script>
+  <!-- CSS -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <!-- Bootstrap Jumbotron -->
+  <link rel="stylesheet" href="css/jumbotron-narrow.css">
 
-  </head>
-  <body>
-    <div class="container">
-      <div class="jumbotron">
-        <h1>Soundmood</h1>
-        <p class="lead">Listen to your heart, you can never go wrong.</p>
-        <form>
-          <div class="input-group">
-            <input id="mood" type="text" class="form-control" placeholder="How are you feeling?">
-              <a id="go" class="input-group-addon" href="#" role="button">Go</a>
-          </div>
-        </form>
+  <!-- JS -->
+  <!-- jQuery -->
+  <script src="js/jquery.js"></script>
+  <!-- Bootstrap -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <!-- Soundcloud API -->
+  <script src="//connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+  <!-- Our JS -->
+  <script src="js/script.js"></script>
 
-        <br>
-        <p><a id="random" class="btn btn-lg btn-success" href="#" role="button">Randomize</a></p>
-        <p id="moodstatus"></p>
-        <p id="songtitle"></p>
-      </div>
+</head>
 
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Soundmoood</h1>
+      <p class="lead">Let music change your mood.</p>
+      <form>
+        <div class="input-group">
+          <input id="mood" type="text" class="form-control" placeholder="Shmoooood?">
+          <a id="go" class="input-group-addon" href="#" role="button">Search</a>
+        </div>
+      </form>
+
+      <br>
+      <p><a id="random" class="btn btn-lg btn-success" href="#" role="button">Randomize</a></p>
+      <p><a id="clear" class="btn btn-lg btn-success" href="#" role="button">Clear</a></p>
+      
+      <p id="moodstatus"></p>
+      <p id="songtitle"></p>
+    </div>
+
+    <body background="bright-colour-change-neon-gif.gif">
+      <center>
+        <font face="Arial Black" font size="5" color="black">
+      <p> What is your mood? Click below for a specific song selection. </p>
+      <a href="https://soundcloud.com/search?q=happy">
+        <img src= "http://gifsec.com/wp-content/uploads/GIF/2014/03/Happy-Will-Ferrell-GIF.gif?gs=a" style="width:128px;height:128px;">
+        <p> HAPPY </p></a>
+    
+      <a href="https://soundcloud.com/search?q=sad">
+        <img src= "http://mashable.com/wp-content/uploads/2013/07/crying-waterfalls.gif" style="width:128px;height:128px;">
+      <p> SAD </p></a>
+      <a href="https://soundcloud.com/search?q=tired">
+        <img src= "http://rack.3.mshcdn.com/media/ZgkyMDEzLzEwLzA0LzZhL3BvbGFyYmVhcnRpLmQ0OTU0LmdpZgpwCXRodW1iCTg1MHg4NTA-CmUJanBn/b25b8d51/7b7/polar-bear-tired.jpg" style="width:128px;height:128px;">
+      <p> TIRED </p></a>
+      <a href="https://soundcloud.com/search?q=alone">
+        <img src= "https://k35.kn3.net/taringa/1/4/7/2/0/7/92/ivijul/176.gif?7921" style="width:128px;height:128px;">
+      <p> ALONE </p></a>
+      <a href="https://soundcloud.com/search?q=calm">
+        <img src= "https://img.buzzfeed.com/buzzfeed-static/static/2014-04/enhanced/webdr03/22/8/anigif_enhanced-17483-1398169693-4.gif" style="width:128px;height:128px;">
+     <p> CALM </p> </a>
+      <a href="https://soundcloud.com/search?q=idk">
+        <img src= "https://m.popkey.co/449839/Q8dqW.gif" style="width:128px;height:128px;">
+      <p> YOU JUST DON'T KNOW.. </p></a>
+      </font>
+      </center>
       <div class="footer">
         <p>&copy; Soundmood</p>
       </div>
-    </div>
+  </div>
   </body>
+
 </html>
